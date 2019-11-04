@@ -294,6 +294,12 @@ ul li {
         width: 30%;
     }
 
+	.services{
+		width:90%;
+		padding:5%;
+
+	}
+
 }
 
 @media (max-width: 500px) {
@@ -345,6 +351,42 @@ ul li {
 	.bottom-section {
 		width:90%;
 		padding:5%;
+	}
+
+	.main {
+		align-items: center;
+	}
+	
+	.row1{
+		flex-direction: column;
+		align-content: center;
+		justify-content: space-evenly;
+		padding:0;
+	}
+
+	.row2{
+		flex-direction: column;
+		align-content: center;
+		justify-content: space-evenly;
+	}
+	
+	.row3{
+		flex-direction: column;
+		align-content: center;
+		justify-content: space-evenly;
+	}
+	
+	.info {
+		margin:4% 0;
+	}
+
+	.services-img {
+		display:none;
+	}
+
+	.facts {
+		width:100%;
+		justify-content: center;
 	}
 
 }
