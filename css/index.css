@@ -100,7 +100,10 @@ hr {
 
 nav {
 	display:flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    width:99%;
+    padding-top:4%;
+    padding-bottom:6%;
 }
 
 .navlinks {
@@ -265,9 +268,34 @@ ul li {
 /*Media Inquiries*/
 
 @media (max-width: 800px) {
+    nav {
+        flex-direction: column-reverse;
+        align-items:center;
+    }
+
+    .logobox{
+        padding:5%;
+    }
+
+    .mainimage{
+        display:none;
+    }
+
+    .content {
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .top-section {
+        width: 45%;
+    }
+
+    .bottom-section {
+        width: 30%;
+    }
 
 }
 
 @media (max-width: 500px) {
-    
+
 }
