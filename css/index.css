@@ -297,5 +297,54 @@ ul li {
 }
 
 @media (max-width: 500px) {
+    nav {
+        justify-content:middle;
+    }
+   
+    .logobox {
+        border-bottom: 1px gray solid;
+		width:100%;
+		display:flex;
+		justify-content:center;
+		
+	}   
+	
+	.logo {
+		margin-left:auto;
+		margin-right:auto;
+		width:50%;
+	}
+	
+	.navlinks {
+        flex-direction: column;
+		justify-content: space-evenly;
+		width:100%;
+    }
+
+    .navlinks a {
+        padding:3%;
+		border-bottom: 1px gray solid;
+		width:100%;
+		display:flex;
+		justify-content: center;
+    }
+
+	header {
+		padding-bottom:10%;
+	}
+
+	.content{
+		flex-direction:column;
+	}
+
+	.top-section {
+		width:90%;
+		padding:5%;
+	}
+
+	.bottom-section {
+		width:90%;
+		padding:5%;
+	}
 
 }
