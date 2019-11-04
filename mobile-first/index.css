@@ -1,0 +1,392 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*CSS reset*/
+* {
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	max-width:100%;
+	/*border:1px solid gray !important;*/
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	width:876px;
+	margin:auto;
+}
+
+h3 {
+	font-size:20px;
+}
+
+.content {
+	display:flex;
+	align-content: stretch;
+	padding:25px 0;
+	justify-content:space-between;
+}
+
+/*Horizontal Rule*/
+hr {
+	border:black 1px inset;
+}
+
+
+/*Nav Bar*/
+
+nav {
+	display:flex;
+    justify-content: space-between;
+    width:99%;
+    padding-top:4%;
+    padding-bottom:6%;
+}
+
+.navlinks {
+	display:flex;
+	width:80%;
+	justify-content: space-around;
+	align-items:center;
+}
+
+.navlinks a{
+	text-decoration: none;
+	color:slategray;
+}
+
+/*Header*/
+header{
+	display:flex;
+	align-items:center;
+	width:100%;
+	justify-content: space-evenly;
+	padding:30px 0; 
+}
+
+.maintitle{
+	display:inline-block;
+	width:40%;
+	
+}
+
+h1{
+	font-size:60px;
+	text-align:center;
+}
+
+button {
+	height: 30%;
+	text-align:center;
+	justify-content:center;
+	background-color:white;
+	text-decoration:none;
+	font-size:16px;
+	border:1px black solid;
+	padding: 5px 40px; 
+
+}
+
+.button {
+	display:flex;
+	justify-content: center;
+}
+
+/*Top Content*/
+.top-section {
+	display:inline-block;
+	width:50%;
+}
+
+/*Bottom Content*/
+.bottom-section {
+	display:inline-block;
+	width:32%;
+
+}
+
+/*Contact*/
+#contact {
+	padding:20px 0;
+}
+
+/*Footer*/
+footer {
+	margin-top:50px;
+	text-align: center;
+}
+
+/*Services Page*/
+.services-header-img {
+	padding: 15px 0;
+}
+
+h2 {
+	font-size:25px;
+}
+
+.services {
+	padding-bottom:20px;
+}
+
+/*Page Main Content*/
+.info {
+	
+	border: 1px black solid !important;
+	padding:20px;
+	width:48%;
+	background-color:#F3F3F3;
+}
+
+.row1 {
+	display:flex;
+	flex-flow:wrap;
+	justify-content: space-between;
+	padding:25px 0;
+	align-content: space-between;
+}
+
+.row2 {
+	display:flex;
+	flex-flow:wrap;
+	justify-content: space-between;
+	padding:25px 0;
+	align-content: space-between;
+}
+
+.row3 {
+	display:flex;
+	flex-flow:wrap;
+	justify-content: space-between;
+	padding:25px 0;
+	align-content: space-between;
+}
+
+.learn-more {
+	padding:8px 35px;
+	border-radius:5px;
+	font-size: 10px;
+}
+
+.info p {
+	margin-bottom:15px;
+}
+
+/*Last Section*/
+.facts {
+	padding-top:30px;
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+}
+
+.service-facts {
+	width:45%;
+	display:flex column;
+	align-content:space-between;
+}
+
+.service-facts p {
+	margin-bottom:20px;
+}
+
+.services-img {
+	width: 45%;
+	display:flex;
+	margin-left:25px;
+}
+
+ul li {
+	list-style-type:square;
+	list-style-position:inside;
+	margin:10px;
+}
+
+/*Media Inquiries*/
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column-reverse;
+        align-items:center;
+    }
+
+    .logobox{
+        padding:5%;
+    }
+
+    .mainimage{
+        display:none;
+    }
+
+    .content {
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .top-section {
+        width: 45%;
+    }
+
+    .bottom-section {
+        width: 30%;
+    }
+
+	.services{
+		width:90%;
+		padding:5%;
+
+	}
+
+}
+
+@media (max-width: 500px) {
+    nav {
+        justify-content:middle;
+    }
+   
+    .logobox {
+        border-bottom: 1px gray solid;
+		width:100%;
+		display:flex;
+		justify-content:center;
+		
+	}   
+	
+	.logo {
+		margin-left:auto;
+		margin-right:auto;
+		width:50%;
+	}
+	
+	.navlinks {
+        flex-direction: column;
+		justify-content: space-evenly;
+		width:100%;
+    }
+
+    .navlinks a {
+        padding:3%;
+		border-bottom: 1px gray solid;
+		width:100%;
+		display:flex;
+		justify-content: center;
+    }
+
+	header {
+		padding-bottom:10%;
+	}
+
+	.content{
+		flex-direction:column;
+	}
+
+	.top-section {
+		width:90%;
+		padding:5%;
+	}
+
+	.bottom-section {
+		width:90%;
+		padding:5%;
+	}
+
+	.main {
+		align-items: center;
+	}
+	
+	.row1{
+		flex-direction: column;
+		align-content: center;
+		justify-content: space-evenly;
+		padding:0;
+	}
+
+	.row2{
+		flex-direction: column;
+		align-content: center;
+		justify-content: space-evenly;
+	}
+	
+	.row3{
+		flex-direction: column;
+		align-content: center;
+		justify-content: space-evenly;
+	}
+	
+	.info {
+		margin:4% 0;
+	}
+
+	.services-img {
+		display:none;
+	}
+
+	.facts {
+		width:100%;
+		justify-content: center;
+	}
+
+}
